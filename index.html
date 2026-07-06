@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Academy</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<img src="logo.png" class="logo" alt="Logo">
+
+<ul>
+<li><a href="#inicio">Início</a></li>
+<li><a href="#cep">CEP</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+
+</nav>
+
+<section id="inicio" class="hero">
+
+<h1>Code Academy</h1>
+
+<p>
+Aprenda programação do zero com aulas práticas e desenvolva projetos reais para o seu portfólio.
+</p>
+
+<button id="btnInscrever">
+Inscreva-se
+</button>
+
+</section>
+
+</header>
+
+<main>
+
+<section class="card" id="cep">
+
+<h2>Consultar CEP</h2>
+
+<input
+type="text"
+id="cepInput"
+placeholder="Digite o CEP"
+inputmode="numeric"
+maxlength="8">
+
+<button id="btnBuscar">
+Buscar
+</button>
+
+<div id="resultado"></div>
+
+</section>
+
+<section class="card" id="contato">
+
+<h2>Contato</h2>
+
+<form id="formContato">
+
+<input
+type="text"
+placeholder="Nome"
+autocomplete="name"
+required>
+
+<input
+type="email"
+placeholder="E-mail"
+autocomplete="email"
+required>
+
+<textarea
+placeholder="Mensagem"
+required>
+</textarea>
+
+<button type="submit">
+Enviar
+</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 Code Academy • Todos os direitos reservados.
+</p>
+
+</footer>
+
+<a
+href="https://wa.me/5551994794921"
+target="_blank"
+class="whatsapp"
+title="Fale conosco pelo WhatsApp">
+
+<img src="whatsapp.svg" alt="WhatsApp">
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

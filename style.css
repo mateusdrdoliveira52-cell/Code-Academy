@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0d6efd,#198754);
+    color:#fff;
+    padding:20px;
+}
+
+nav{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    width:140px;
+    transition:.3s;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+.hero{
+    max-width:700px;
+    margin:60px auto;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+button{
+    background:#198754;
+    color:#fff;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#157347;
+    transform:translateY(-3px);
+}
+
+main{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 5px rgba(13,110,253,.4);
+}
+
+textarea{
+    resize:none;
+    height:130px;
+}
+
+#resultado{
+    margin-top:20px;
+    font-weight:600;
+    line-height:1.8;
+}
+
+footer{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+.whatsapp img{
+    width:35px;
+}
+
+@media (max-width:768px){
+
+header{
+    padding:15px;
+}
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+.logo{
+    width:110px;
+}
+
+nav ul{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.hero{
+    margin:40px auto;
+    padding:0 15px;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.card{
+    padding:20px;
+}
+
+button{
+    width:100%;
+}
+
+.whatsapp{
+    width:55px;
+    height:55px;
+    right:15px;
+    bottom:15px;
+}
+
+.whatsapp img{
+    width:30px;
+}
+
+}
